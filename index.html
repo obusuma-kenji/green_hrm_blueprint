@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>グリーンHRM連動型 人事評価制度 導入提案書｜Green Value Evaluation System</title>
+  <meta name="description" content="環境貢献を昇格・昇級・賞与に反映する、グリーンHRM連動型人事評価制度の導入提案LP。PDF提案書・評価シート・動画・音声を統合。" />
+  <style>
+    :root{
+      --green:#0f5f3f;
+      --green2:#168458;
+      --green3:#e9f6ee;
+      --mint:#f3fbf6;
+      --ink:#13241b;
+      --muted:#5d6d63;
+      --gold:#c9972b;
+      --cream:#fffaf0;
+      --white:#fff;
+      --line:#d7e8dc;
+      --shadow:0 18px 48px rgba(15,95,63,.16);
+      --shadow2:0 10px 28px rgba(12,37,24,.12);
+      --radius:28px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+      color:var(--ink);
+      background:linear-gradient(180deg,#f6fbf6 0%,#ffffff 18%,#f4fbf6 100%);
+      line-height:1.75;
+    }
+    img,video,iframe{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .page{overflow:hidden}
+    .container{width:min(1120px,calc(100% - 40px));margin:0 auto}
+    .topbar{
+      position:sticky;top:0;z-index:50;
+      background:rgba(255,255,255,.88);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(15,95,63,.14);
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--green);letter-spacing:.03em}
+    .brand .leaf{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--green),#43b474);color:#fff;box-shadow:0 8px 20px rgba(22,132,88,.28)}
+    .navlinks{display:flex;gap:16px;align-items:center;font-size:14px;font-weight:700;color:#2f4a3b}
+    .navlinks a{padding:8px 10px;border-radius:999px}
+    .navlinks a:hover{background:var(--green3)}
+    .nav-cta{background:var(--green)!important;color:#fff!important;padding:9px 16px!important;box-shadow:0 8px 18px rgba(15,95,63,.25)}
+    .hero{position:relative;padding:70px 0 58px;background:
+      radial-gradient(circle at 12% 14%,rgba(201,151,43,.24),transparent 28%),
+      radial-gradient(circle at 78% 2%,rgba(29,167,112,.22),transparent 30%),
+      linear-gradient(135deg,#effaf2 0%,#ffffff 55%,#f5f9ef 100%);
+    }
+    .hero:before{content:"";position:absolute;inset:auto -6% -160px -6%;height:240px;background:linear-gradient(180deg,transparent,rgba(15,95,63,.06));transform:rotate(-2deg)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center;position:relative}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border:1px solid rgba(15,95,63,.18);background:rgba(255,255,255,.76);border-radius:999px;color:var(--green);font-weight:900;font-size:13px;box-shadow:0 8px 20px rgba(15,95,63,.08)}
+    h1{font-size:clamp(38px,5.4vw,72px);line-height:1.08;letter-spacing:-.04em;margin:18px 0 18px;font-weight:950}
+    .grad{background:linear-gradient(90deg,var(--green),#1aa66d 48%,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:clamp(17px,2vw,22px);font-weight:750;color:#23382b;margin:0 0 24px}
+    .hero-text{font-size:15px;color:var(--muted);max-width:760px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 20px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;border-radius:999px;font-weight:900;border:1px solid transparent;transition:.2s ease;box-shadow:0 10px 25px rgba(15,95,63,.16)}
+    .btn-primary{background:linear-gradient(135deg,var(--green),var(--green2));color:#fff}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(15,95,63,.24)}
+    .btn-ghost{background:#fff;color:var(--green);border-color:rgba(15,95,63,.2)}
+    .btn-ghost:hover{background:var(--green3);transform:translateY(-2px)}
+    .trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+    .trust span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-weight:800;color:#315041;font-size:13px}
+    .hero-card{position:relative;background:#fff;border:1px solid rgba(15,95,63,.18);border-radius:34px;box-shadow:var(--shadow);padding:15px;transform:rotate(1.2deg)}
+    .hero-card:after{content:"導入提案書・調査報告・評価シート・動画音声を1ページ統合";position:absolute;left:24px;right:24px;bottom:24px;background:rgba(15,95,63,.88);color:#fff;border-radius:18px;padding:12px 14px;font-weight:900;font-size:14px;text-align:center;backdrop-filter:blur(8px)}
+    .hero-card img{border-radius:24px;width:100%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+    .section{padding:78px 0;position:relative}
+    .section-title{max-width:840px;margin:0 auto 34px;text-align:center}
+    .kicker{color:var(--green);font-size:14px;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+    h2{font-size:clamp(30px,4vw,48px);line-height:1.22;margin:0 0 14px;letter-spacing:-.03em}
+    .section-title p{margin:0;color:var(--muted);font-weight:650;font-size:16px}
+    .problem{background:#fff}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow2);position:relative;overflow:hidden}
+    .card:before{content:"";position:absolute;right:-40px;top:-40px;width:120px;height:120px;background:radial-gradient(circle,rgba(22,132,88,.13),transparent 70%)}
+    .card .icon{font-size:32px;margin-bottom:10px}
+    .card h3{font-size:22px;line-height:1.35;margin:0 0 10px;color:#123525}
+    .card p{margin:0;color:var(--muted);font-weight:600}
+    .solution{background:linear-gradient(180deg,#f2fbf5,#fff)}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
+    .visual-panel{background:#fff;border:1px solid var(--line);border-radius:32px;padding:18px;box-shadow:var(--shadow)}
+    .visual-panel img{border-radius:22px}
+    .number-list{display:grid;gap:14px}
+    .number-item{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 10px 24px rgba(15,95,63,.08)}
+    .num{width:46px;height:46px;border-radius:16px;background:linear-gradient(135deg,var(--green),#47b77d);color:#fff;display:grid;place-items:center;font-weight:950;font-size:18px}
+    .number-item strong{display:block;font-size:18px;margin-bottom:2px;color:#143c29}
+    .number-item span{color:var(--muted);font-weight:600;font-size:14px}
+    .system-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch}
+    .table-card{background:#fff;border:1px solid var(--line);border-radius:30px;padding:26px;box-shadow:var(--shadow2)}
+    .data-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:18px;border:1px solid var(--line);font-size:14px;background:#fff}
+    .data-table th{background:var(--green);color:#fff;text-align:left;padding:12px;font-size:13px}
+    .data-table td{padding:12px;border-top:1px solid var(--line);vertical-align:top;color:#32463a;font-weight:650}
+    .data-table tr:nth-child(even) td{background:#f7fbf8}
+    .pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .pill{display:inline-flex;background:#f2f8f4;border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:#1e5c3e;font-weight:900;font-size:13px}
+    .highlight{background:linear-gradient(135deg,var(--green),#07351f);color:#fff;border-radius:34px;padding:38px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .highlight:before{content:"";position:absolute;right:-80px;top:-70px;width:230px;height:230px;border-radius:50%;background:rgba(255,255,255,.12)}
+    .highlight h2,.highlight p{color:#fff;text-align:left}
+    .highlight p{opacity:.86;font-weight:650}
+    .metric-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+    .metric{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:22px;padding:18px;backdrop-filter:blur(8px)}
+    .metric b{display:block;font-size:30px;line-height:1;color:#fff;margin-bottom:8px}
+    .metric span{font-size:13px;opacity:.9;font-weight:800}
+    .phase{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:phase}
+    .phase-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow2);position:relative}
+    .phase-card:before{counter-increment:phase;content:"Phase " counter(phase);display:inline-flex;background:var(--green3);color:var(--green);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:950;margin-bottom:14px}
+    .phase-card h3{margin:0 0 10px;font-size:22px}
+    .phase-card p{margin:0;color:var(--muted);font-weight:650}
+    .media{background:#fff}
+    .media-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .media-card{border:1px solid var(--line);border-radius:30px;background:#fff;box-shadow:var(--shadow2);overflow:hidden}
+    .media-card .body{padding:20px}
+    .media-card h3{margin:0 0 6px;font-size:22px;color:#113624}
+    .media-card p{margin:0 0 14px;color:var(--muted);font-weight:650}
+    video{width:100%;background:#102418;aspect-ratio:16/9;object-fit:cover}
+    audio{width:100%;margin-top:8px}
+    .docs{background:linear-gradient(180deg,#f4fbf6,#fff)}
+    .doc-layout{display:grid;grid-template-columns:300px 1fr;gap:22px;align-items:start}
+    .doc-tabs{position:sticky;top:84px;display:grid;gap:10px}
+    .tab-btn{width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:18px;padding:14px 15px;font-weight:900;color:#254735;cursor:pointer;box-shadow:0 8px 18px rgba(15,95,63,.08)}
+    .tab-btn.active{background:var(--green);color:#fff;border-color:var(--green)}
+    .viewer{display:none;background:#fff;border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow);overflow:hidden}
+    .viewer.active{display:block}
+    .viewer-head{padding:22px 24px;border-bottom:1px solid var(--line);display:flex;gap:14px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    .viewer-head h3{margin:0;font-size:22px;color:#123827}
+    .viewer-head p{margin:4px 0 0;color:var(--muted);font-weight:650;font-size:14px}
+    .viewer iframe{width:100%;height:720px;border:0;background:#f7f7f7}
+    .download-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+    .download-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:var(--shadow2)}
+    .download-card h3{margin:0 0 8px;font-size:18px;color:#123827}
+    .download-card p{margin:0 0 14px;color:var(--muted);font-size:13px;font-weight:650}
+    .mini-btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:var(--green);color:#fff;padding:9px 14px;font-size:13px;font-weight:950}
+    .cta-section{padding:86px 0;background:
+      radial-gradient(circle at 20% 10%,rgba(201,151,43,.20),transparent 32%),
+      linear-gradient(135deg,#08351f,#0f5f3f 58%,#169364);color:#fff}
+    .cta-box{display:grid;grid-template-columns:1fr 360px;gap:30px;align-items:center}
+    .cta-section h2{color:#fff;text-align:left;margin-bottom:12px}
+    .cta-section p{color:rgba(255,255,255,.86);font-weight:650;margin:0}
+    .contact-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:28px;padding:24px;box-shadow:0 18px 48px rgba(0,0,0,.18);backdrop-filter:blur(12px)}
+    .contact-card a{display:flex;align-items:center;justify-content:center;background:#fff;color:var(--green);border-radius:999px;padding:14px 18px;font-weight:950;margin-top:16px}
+    .footer{background:#062619;color:rgba(255,255,255,.72);padding:30px 0;font-size:13px}
+    .footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .note{font-size:12px;color:#6a786f;margin-top:16px}
+    @media (max-width:920px){
+      .navlinks{display:none}
+      .hero-grid,.split,.system-grid,.doc-layout,.cta-box{grid-template-columns:1fr}
+      .hero{padding-top:46px}
+      .hero-card{transform:none}
+      .cards,.phase,.metric-row,.download-grid{grid-template-columns:1fr 1fr}
+      .media-grid{grid-template-columns:1fr}
+      .doc-tabs{position:static;grid-template-columns:1fr 1fr}
+      .viewer iframe{height:560px}
+    }
+    @media (max-width:620px){
+      .container{width:min(100% - 24px,1120px)}
+      .cards,.phase,.metric-row,.download-grid,.doc-tabs{grid-template-columns:1fr}
+      .hero-card:after{position:static;margin-top:12px}
+      .section{padding:56px 0}
+      .viewer iframe{height:480px}
+      h1{font-size:38px}
+      h2{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#top"><span class="leaf">🌿</span><span>Green Value Evaluation System</span></a>
+      <nav class="navlinks" aria-label="main navigation">
+        <a href="#problem">課題</a>
+        <a href="#system">制度設計</a>
+        <a href="#media">動画・音声</a>
+        <a href="#docs">資料</a>
+        <a href="#contact" class="nav-cta">相談する</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">中小企業の人事評価を、ESG時代の成長エンジンへ</div>
+          <h1>環境貢献を<br><span class="grad">昇格・昇級・賞与</span>に<br>つなげる人事評価制度</h1>
+          <p class="lead">グリーンHRMを「良いこと」で終わらせず、現場行動・改善提案・部門KPI・報酬制度まで一気通貫で設計する導入提案LPです。</p>
+          <p class="hero-text">会社全体の環境目標、部門別KPI、個人のグリーン行動、昇格要件を4層で整理。初年度は評価比率10％・賞与反映±5％から安全に開始し、制度定着後に拡張できる実務型モデルとして提案します。</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#docs">提案書PDFを見る</a>
+            <a class="btn btn-ghost" href="green_hrm_evaluation_sheet.xlsx" download>評価シートExcelを取得</a>
+            <a class="btn btn-ghost" href="#media">動画で理解する</a>
+          </div>
+          <div class="trust">
+            <span>4層評価構造</span>
+            <span>BARS行動評価</span>
+            <span>賞与係数モデル</span>
+            <span>3フェーズ導入</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="green_hrm_guide.png" alt="稼ぐための新常識 グリーン人事評価 完全ガイド" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem" id="problem">
+      <div class="container">
+        <div class="section-title">
+          <div class="kicker">Problem</div>
+          <h2>ESG・SDGsが、現場では「余計な仕事」になっていませんか。</h2>
+          <p>グリーンHRMの本質は、環境活動をボランティアにすることではなく、事業価値・人材価値・市場価値へ変換することです。</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="icon">📄</div>
+            <h3>スローガンで止まる</h3>
+            <p>環境方針はあるが、誰が何をすれば評価されるのかが曖昧。結果として、活動が一部の担当者任せになります。</p>
+          </article>
+          <article class="card">
+            <div class="icon">⚖️</div>
+            <h3>評価に入れにくい</h3>
+            <p>CO2削減やペーパーレスは数値化できても、日常行動や改善提案を公平に評価する基準が不足しがちです。</p>
+          </article>
+          <article class="card">
+            <div class="icon">💰</div>
+            <h3>報酬とつながらない</h3>
+            <p>昇給・賞与・昇格に反映されなければ、従業員にとっては「本気で取り組む理由」が弱くなります。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section solution">
+      <div class="container split">
+        <div class="visual-panel">
+          <img src="green_hrm_guide.png" alt="グリーンHRM導入ステップの全体像" />
+        </div>
+        <div>
+          <div class="kicker">Concept</div>
+          <h2>「環境に良い」を、会社の評価ルールに翻訳する。</h2>
+          <div class="number-list">
+            <div class="number-item"><div class="num">1</div><div><strong>責任範囲を明確化</strong><span>全社・部門・個人・昇格の4層で、誰が何を背負うのかを整理します。</span></div></div>
+            <div class="number-item"><div class="num">2</div><div><strong>結果だけでなくプロセスを評価</strong><span>数値KPIだけでなく、BARSで改善提案・巻き込み・横展開まで評価します。</span></div></div>
+            <div class="number-item"><div class="num">3</div><div><strong>報酬に無理なく接続</strong><span>初年度は加点要素・±5％の賞与係数から始め、制度定着後に拡大します。</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="system">
+      <div class="container">
+        <div class="section-title">
+          <div class="kicker">Evaluation Design</div>
+          <h2>制度の中核は「4層構造」と「行動評価」です。</h2>
+          <p>経営・部門・個人・昇格の評価ポイントを分けることで、中小企業でも無理なく導入できます。</p>
+        </div>
+        <div class="system-grid">
+          <div class="table-card">
+            <h3>4層構造で責任範囲を明確にする</h3>
+            <table class="data-table">
+              <thead><tr><th>階層</th><th>評価内容</th><th>主な反映先</th></tr></thead>
+              <tbody>
+                <tr><td>第1層：全社</td><td>会社全体の環境目標達成度</td><td>賞与原資・全社係数</td></tr>
+                <tr><td>第2層：部門</td><td>部門ごとの環境KPI</td><td>管理職評価・部門賞与</td></tr>
+                <tr><td>第3層：個人</td><td>日々のグリーン行動・改善提案</td><td>個人評価・昇級・賞与</td></tr>
+                <tr><td>第4層：昇格</td><td>サステナビリティ・コンピテンシー</td><td>昇格・管理職登用</td></tr>
+              </tbody>
+            </table>
+            <div class="pill-row"><span class="pill">一般社員：行動と提案</span><span class="pill">管理職：部門KPI</span><span class="pill">経営層：全社目標</span></div>
+          </div>
+          <div class="table-card">
+            <h3>BARSで「どこまでやれば評価されるか」を明示</h3>
+            <table class="data-table">
+              <thead><tr><th>ランク</th><th>点数</th><th>行動基準</th></tr></thead>
+              <tbody>
+                <tr><td>S</td><td>15点</td><td>自部門の改善を主導し、数値成果または横展開できる仕組みを作った</td></tr>
+                <tr><td>A</td><td>12点</td><td>具体的な改善提案を行い、実行まで関与した</td></tr>
+                <tr><td>B</td><td>9点</td><td>省エネ・ペーパーレス・廃棄物削減などを日常的に実践した</td></tr>
+                <tr><td>C</td><td>6点</td><td>指示された取り組みには参加したが、自主性は弱い</td></tr>
+                <tr><td>D</td><td>3点</td><td>取り組みに消極的、または無関心が目立つ</td></tr>
+              </tbody>
+            </table>
+            <div class="pill-row"><span class="pill">主観評価を抑制</span><span class="pill">行動アンカー明示</span><span class="pill">心理的安全性を確保</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="highlight">
+          <div class="kicker" style="color:#d9ffd9">Reward Model</div>
+          <h2>賞与計算式に「グリーン係数」を組み込む。</h2>
+          <p>個人賞与 ＝ 基準賞与 × 会社業績係数 × 部門係数 × 個人評価係数 × グリーン係数。初年度は±5％程度から開始し、制度定着後に±10％へ拡張する設計です。</p>
+          <div class="metric-row">
+            <div class="metric"><b>S</b><span>1.05〜1.10<br>横展開できる成果</span></div>
+            <div class="metric"><b>A</b><span>1.05<br>提案と実行に関与</span></div>
+            <div class="metric"><b>B</b><span>1.00<br>標準評価・増減なし</span></div>
+            <div class="metric"><b>C/D</b><span>0.97〜0.95<br>改善指導と再挑戦</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <div class="kicker">Roadmap</div>
+          <h2>中小企業向け、3フェーズ導入ロードマップ。</h2>
+          <p>いきなり給与連動を強めず、見える化・一部反映・完全連動の順で制度を育てます。</p>
+        </div>
+        <div class="phase">
+          <div class="phase-card">
+            <h3>見える化</h3>
+            <p>電気・紙・廃棄物・改善提案数を記録し、ダッシュボードで現状の「無駄」を共通認識にします。</p>
+          </div>
+          <div class="phase-card">
+            <h3>評価への一部反映</h3>
+            <p>個人評価にグリーン項目を追加。まずは加点要素として運用し、成功体験を積み上げます。</p>
+          </div>
+          <div class="phase-card">
+            <h3>昇格・賞与連動</h3>
+            <p>賞与係数や昇格要件に本格反映。年間表彰制度も設け、文化として定着させます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section media" id="media">
+      <div class="container">
+        <div class="section-title">
+          <div class="kicker">Movie & Audio</div>
+          <h2>提案先にそのまま見せられる動画・音声コンテンツ。</h2>
+          <p>説明資料だけでなく、導入イメージを短時間で伝えるメディアをLP上に統合しました。</p>
+        </div>
+        <div class="media-grid">
+          <article class="media-card">
+            <video src="green_hrm_blueprint_small.mp4" controls playsinline preload="metadata"></video>
+            <div class="body"><h3>グリーンHRM導入ブループリント</h3><p>制度の全体像、評価の階層、導入ステップを動画で把握できます。</p></div>
+          </article>
+          <article class="media-card">
+            <video src="sustainability_compensation_small.mp4" controls playsinline preload="metadata"></video>
+            <div class="body"><h3>サステナビリティと報酬の連動</h3><p>環境貢献を給与・賞与・市場価値へ変える考え方を説明します。</p></div>
+          </article>
+          <article class="media-card">
+            <div class="body"><h3>環境意識が給料を変える新ルール</h3><p>制度導入の背景を音声で説明。移動中や社内共有にも使えます。</p><audio src="eco_salary_rule_send.m4a" controls preload="metadata"></audio></div>
+          </article>
+          <article class="media-card">
+            <div class="body"><h3>SDGsが給料と評価を左右する</h3><p>SDGs・評価・報酬の接続をわかりやすく伝える音声コンテンツです。</p><audio src="sdgs_salary_evaluation_small.m4a" controls preload="metadata"></audio></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section docs" id="docs">
+      <div class="container">
+        <div class="section-title">
+          <div class="kicker">Documents</div>
+          <h2>提案書・調査報告・プレイブック・評価シートを統合。</h2>
+          <p>LPを開くだけで、制度概要、理論的根拠、導入ストーリー、実務用評価シートまで確認できます。</p>
+        </div>
+        <div class="doc-layout">
+          <div class="doc-tabs" role="tablist" aria-label="documents">
+            <button class="tab-btn active" data-tab="proposal">導入提案書PDF</button>
+            <button class="tab-btn" data-tab="research">調査報告PDF</button>
+            <button class="tab-btn" data-tab="playbook">戦略プレイブック</button>
+          </div>
+          <div>
+            <article class="viewer active" id="proposal">
+              <div class="viewer-head"><div><h3>Green Value Evaluation System 導入提案書</h3><p>環境貢献を昇格・昇給・賞与に反映する制度設計の中核資料です。</p></div><a class="mini-btn" href="green_value_evaluation_system.pdf" download>PDFをダウンロード</a></div>
+              <iframe src="green_value_evaluation_system.pdf#view=FitH" title="Green Value Evaluation System 導入提案書"></iframe>
+            </article>
+            <article class="viewer" id="research">
+              <div class="viewer-head"><div><h3>サステナブルHRM・グリーンHRM 調査報告</h3><p>理論的基盤、評価指標、企業事例を整理した参考資料です。</p></div><a class="mini-btn" href="green_sustainable_hrm_report.pdf" download>PDFをダウンロード</a></div>
+              <iframe src="green_sustainable_hrm_report.pdf#view=FitH" title="サステナブルHRM・グリーンHRM調査報告"></iframe>
+            </article>
+            <article class="viewer" id="playbook">
+              <div class="viewer-head"><div><h3>未来を攻略する戦略プレイブック</h3><p>グリーンHRMを「市場価値を変える仕組み」として伝えるビジュアル資料です。</p></div><a class="mini-btn" href="future_value_playbook.pdf" download>PDFをダウンロード</a></div>
+              <iframe src="future_value_playbook.pdf#view=FitH" title="未来を攻略する戦略プレイブック"></iframe>
+            </article>
+          </div>
+        </div>
+        <div class="download-grid">
+          <div class="download-card"><h3>導入提案書</h3><p>制度全体の説明・配点・賞与係数・ロードマップ。</p><a class="mini-btn" href="green_value_evaluation_system.pdf" download>取得</a></div>
+          <div class="download-card"><h3>調査報告</h3><p>サステナブルHRMとグリーンHRMの理論・指標整理。</p><a class="mini-btn" href="green_sustainable_hrm_report.pdf" download>取得</a></div>
+          <div class="download-card"><h3>戦略プレイブック</h3><p>提案先の理解を深めるビジュアルストーリー。</p><a class="mini-btn" href="future_value_playbook.pdf" download>取得</a></div>
+          <div class="download-card"><h3>評価シートExcel</h3><p>顧問先に提出しやすい実務用の人事評価シート。</p><a class="mini-btn" href="green_hrm_evaluation_sheet.xlsx" download>取得</a></div>
+        </div>
+        <p class="note">※ GitHub Pagesに公開する場合は、このindex.htmlと各PDF・動画・音声・Excelを同じ階層に置いてください。</p>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="container cta-box">
+        <div>
+          <div class="kicker" style="color:#ddffdd">Next Action</div>
+          <h2>グリーンHRMを、人事制度の「加点材料」から始めませんか。</h2>
+          <p>最初から厳しい減点制度にする必要はありません。まずは見える化、加点評価、表彰、賞与の小さな連動から開始し、環境貢献が自然に評価される会社づくりへ進めます。</p>
+        </div>
+        <div class="contact-card">
+          <strong>導入相談・制度設計・評価シート作成</strong>
+          <p style="margin-top:8px">おぶすま社会保険労務士事務所 / kenjispark AI 士業ラボ</p>
+          <a href="mailto:sample@example.com?subject=グリーンHRM連動型人事評価制度について相談したい">メールで相談する</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© おぶすま社会保険労務士事務所 / kenjispark AI 士業ラボ</div>
+      <div>Green Value Evaluation System</div>
+    </div>
+  </footer>
+</div>
+<script>
+  const buttons = document.querySelectorAll('.tab-btn');
+  const viewers = document.querySelectorAll('.viewer');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      viewers.forEach(v => v.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
